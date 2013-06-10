@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+    charset=ISO-8859-1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startup Page</title>
+    <script type="text/javascript" charset="utf-8" src="scripts/cordova-1.8.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/SpeechRecognizerPlugin.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="scripts/asr.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/tts.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/ttsCT.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/settings.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      function startup(){
+        if(!document.getElementById('userName').value){
+          alert("Please enter your user name!");
+        }
+        else{
+          window.location="interaction.html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3><b>Startup</b></h3>
+    <h3><b>Account Logon</b></h3>
+    <table>
+      <tr><td><input type="text" size="20" id="userName" value="user"/></td></tr>
+      <tr><td><button type='button' id='startUp' onclick="startup();">Start</button></td></tr>
+    </table>
+  </body>
+</html>

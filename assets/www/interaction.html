@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1"/>
+    <title>Basic Speech Application</title>
+    <link rel="stylesheet" href="css/speechControl.css"
+    media="screen" type="text/css"/>
+    <link rel="stylesheet" href="css/style2.css"
+    media="screen" type="text/css"/>
+    <script type="text/javascript" charset="utf-8" src="scripts/cordova-1.8.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/SpeechRecognizerPlugin.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/asr.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/tts.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/ttsCT.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/settings.js"></script> 
+  </head>
+  <body onload="startSession();">
+    <h3><b>Conversation</b></h3>
+    <table>
+      <tr>
+        <td>
+          <input type="button" id="toggleListening" class="speechControlButton greenSpeech" onClick="toggleRecording();">
+          </input>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td><b>Status: </b><span id="statusLine"></span></td>
+      </tr>
+      <tr>
+        <td><b>Heard: </b><span id="asrResult"></span></td>
+      </tr>
+      <tr>
+        <td><b>Said: </b><span id="spokenText"></span></b></td></span></td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+/* reduced sizes for mobile, media queries for mobile/tablet */
+body {
+    margin: 0;
+    padding: 0;
+}
+@media all and (max-width: 800px) and (min-width: 480px) {
+.banner {
+	width:100%
+}
+}
+@media all and (max-width: 1280px) and (min-width: 801px) {
+.banner {
+	max-width: 100%;
+	min-width: 100%;
+	height: auto;
+}
+}
+
+
+.speechControlButton{
+	color: #ffffff/* text color on dark background */;
+	margin: 2px;
+	font-size: 14px;
+	height: 110px;
+	width: 110px;
+	font-weight: bold;
+	font-family: Arial,Helvetica,sans-serif;
+	position: fixed;
+	right: 0px;
+	opacity: 1.0;
+	background-color: #52b552;
+	background-image: none;
+                background-position: top;
+	vertical-align: bottom;
+	top: 0px;
+	border-top-left-radius:2em;
+    border-top-right-radius:2em;
+    border-bottom-left-radius:2em;
+    border-bottom-right-radius:2em;
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.greenSpeech {
+	color: #e8f0de;
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+	background-image: url(../images/mikeLargeGreen.png);
+	border: none;
+}
+
+.redSpeech {
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+	background-image: url(../images/mikeLargeRed.png);
+	border: none;
+}
+
+/* the next two classes are for rotating words*/
+.rw-words span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	color: #6b969d;
+}
+
+.rw-words-2 span{
+	animation: rotateWordsSecond 18s linear infinite 0s;
+}
